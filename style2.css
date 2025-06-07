@@ -1,0 +1,103 @@
+/* style.css */
+
+body {
+    margin: 0;
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    color: #333;
+}
+
+.container {
+    text-align: left;
+    background: yellow;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color:   greenyellow;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.photo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #1565c0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info th {
+    text-align: left;
+    padding: 8px;
+    color: #0d47a1;
+    width: 120px;
+}
+
+.info td {
+    padding: 8px;
+}
+
+.skills h2 {
+    margin-top: 30px;
+    color: #1565c0;
+}
+
+.skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+
+    .info table {
+        font-size: 14px;
+    }
+}
